@@ -1,6 +1,71 @@
 body {
-    background-color: black;
+    margin: 0;
+    padding: 20px;
+    font-family: 'inter', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
 }
-#HW {
-    color: azure;
+
+#welcomeText {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#textUnderWelcomeText {
+    text-align: center;
+    font-size: 1rem;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+#serverCardHolder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.serverCard {
+    background-color:#161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.serverCard h2 {
+    margin-top: 0;
+}
+
+.serverLinkButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.serverLinkButtons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color:#238636;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.serverLinkButtons a:hover {
+    background-color:#2ea043;
+}
+
+.serverLinkButtons a img {
+    height: 20px;
+    width: auto;
 }
