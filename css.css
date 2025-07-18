@@ -20,21 +20,39 @@ body {
 }
 
 #serverCardHolder {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    padding: 0 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .serverCard {
+    aspect-ratio: 1 / 1;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
     background-color:#161b22;
     border: 1px solid #30363d;
     border-radius: 12px;
     padding: 20px;
-    max-width: 400px;
-    width: 90%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
+
+    transition: transform 0.2s ease;
+}
+
+.serverCard:hover {
+    transform: scale(1.03);
 }
 
 .serverCard h2 {
@@ -68,4 +86,13 @@ body {
 .serverLinkButtons a img {
     height: 20px;
     width: auto;
+}
+
+
+#addServerButton img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    float: right;
+    cursor: pointer;
 }
